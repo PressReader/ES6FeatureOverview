@@ -8,7 +8,8 @@ Features covered in this overview:
 - [generators](#generators)
 - [classes](#classes)
 - [modules](#modules)
-- [new built-in objects](new-built-in-objects)
+- [new built-in objects](#new-built-in-objects)
+- [template strings](#template-strings)
 
 
 ### Arrow functions
@@ -36,7 +37,7 @@ var preson = {
 	_name: 'Bob Ross',
 	_friendsCount: 9999,
 	addFriend () {
-		setTimeout(()=> {
+		setTimeout(() => {
 			this._friendsCount++;
 			console.log(this._name, 'has', this._friendsCount, 'friends!');
 		}, 200);
@@ -132,14 +133,13 @@ Also about Symbols here
 ### Generators
 
 ### Classes
-Also about Subclassable Built-ins here
+Also about subclassable Built-ins here
 
 ### Modules
 Aslo about module loaders here
 
 ### New built-in objects
-
 Map, Set, WeakMap, WeakSet, Promise, Proxy
 
-
+### Template strings
 
