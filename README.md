@@ -1,8 +1,8 @@
 Features covered in this overview:
 - # [Arrow functions](arrows/arrow_func.md)
 - # [`let` and `const`](let_const/let_and_const.md)
-- # [[TODO] destructuring](#destructuring)
 - # [[TODO]default + rest + spread](#default--rest--spread)
+- # [destructuring](destruct/pattern_match.md)
 - # [[TODO]enhanced object literals](#enhanced-object-literals)
 - # [[TODO]modules](#modules)
 - # [classes](classes/classes.md)
@@ -10,8 +10,6 @@ Features covered in this overview:
 - # [[TODO]iterators + for..of](#iterators--forof)
 - # [[TODO]generators](#generators)
 - # [[TODO]template strings](#template-strings)
-
-### Destructuring
 
 ### Default + Rest + Spread
 
