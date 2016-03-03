@@ -159,10 +159,11 @@ class Person {
 ```
 
 > Sub classing with `extends`
+
 ```JavaScript
 class Employee extends Person {
   constructor (name, title) {
-    super(name);
+    super(name);	// calling base class constructor
 
     this._title = title;
   }
@@ -172,7 +173,7 @@ class Employee extends Person {
   }
 
   doWork() {
-    return super.doWork() + ' hard';
+    return super.doWork() + ' hard';	// calling base class method
   }
 }
 
@@ -185,6 +186,7 @@ for(let person of [greatPerson, humblePerson]) {
 ```
 
 > Can also have static methods
+
 ```JavaScript
 class Point {
     constructor(x, y) {
@@ -206,8 +208,8 @@ let p2 = new Point(10, 10);
 
 console.log(Point.distance(p1, p2));
 ```
-##Also about subclassable Built-ins here
 
+###### [TODO] Subclassable Built-ins
 
 
 ### Modules
