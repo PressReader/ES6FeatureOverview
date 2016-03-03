@@ -14,55 +14,7 @@
 
 ### [New built-in objects](built_ins/promise.md)
 
-### [[TODO]iterators + for..of](#iterators--forof)
-
-### [[TODO]generators](#generators)
+### [iterators + for..of + generators](iterators/iterators.md)
 
 ### [[TODO]template strings](#template-strings)
-
-### Iterators + For..Of
-
-#### Array
-```JavaScript
-let iterable = [1, 2, 3];
-
-for (let value of iterable) {
-  console.log(value);
-}
-// 1
-// 2
-// 3
-```
-
-#### String
-```JavaScript
-let iterable = "boo";
-
-for (let value of iterable) {
-  console.log(value);
-}
-// "b"
-// "o"
-// "o"
-```
-
-
-#### Difference between for...of and for...in
-```JavaScript
-let iterable = [3, 5, 7];
-iterable.foo = "hello";
-
-for (let i in iterable) {
-  console.log(i); // logs 0, 1, 2, "foo"
-}
-
-for (let i of iterable) {
-  console.log(i); // logs 3, 5, 7
-}
-```
-Also about Symbols here
-
-### Generators
-
-### Template strings
 
