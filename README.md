@@ -129,7 +129,7 @@ console.log(y.count);	// prints 2
 
 ### Iterators + For..Of
 
-## Array
+#### Array
 ```JavaScript
 let iterable = [1, 2, 3];
 
@@ -141,7 +141,7 @@ for (let value of iterable) {
 // 3
 ```
 
-## String
+#### String
 ```JavaScript
 let iterable = "boo";
 
@@ -154,7 +154,7 @@ for (let value of iterable) {
 ```
 
 
-## Difference between for...of and for...in
+#### Difference between for...of and for...in
 ```JavaScript
 let iterable = [3, 5, 7];
 iterable.foo = "hello";
