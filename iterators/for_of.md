@@ -26,6 +26,7 @@ for(let v of reverseCollection) {
 ```
 
 > Must use `Symbol.iterator` to hook up the iteration
+
 > Many built-in objects like `ArrayMap`, `Set`, `String`, are iterable
 
 ##### [`-> generators`](generators.md)
