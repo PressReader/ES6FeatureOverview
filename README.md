@@ -3,7 +3,7 @@ Features covered in this overview:
 - # [`let` and `const`](let_const/let_and_const.md)
 - # [default + rest + spread](default_rest_spread/def_val.md)
 - # [destructuring](destruct/pattern_match.md)
-- # [[TODO]enhanced object literals](#enhanced-object-literals)
+- # [[TODO]enhanced object literals](obj_literals/short_prop.md)
 - # [[TODO]modules](#modules)
 - # [classes](classes/classes.md)
 - # [[TODO]new built-in objects](#new-built-in-objects)
