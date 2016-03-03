@@ -11,7 +11,7 @@ function sortArgs(...theArgs) {
 console.log(sortArgs(5,3,7,1)); // [1, 3, 5, 7]
 ```
 
-### Take as many arguments as needed.
+### Take as many arguments as needed
 ```JavaScript
 function multiply(multiplier, ...args) {
   return args.map(e => multiplier * e);

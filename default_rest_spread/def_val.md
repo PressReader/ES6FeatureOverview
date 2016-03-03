@@ -3,7 +3,8 @@
 function f(x, y = 12) {
   return x + y;
 }
-f(3)    // 15
+
+f(3);    // 15
 ```
 ### Nested defaults also available
 ```JavaScript
