@@ -1,3 +1,5 @@
+# ECMAScript 6 Overview
+
 ### [Arrow functions](arrows/arrow_func.md)
 
 ### [`let` and `const`](let_const/let_and_const.md)
@@ -16,5 +18,4 @@
 
 ### [iterators + for..of + generators](iterators/iterators.md)
 
-### [[TODO]template strings](#template-strings)
-
+### [Template Strings](str-template/str.md)
