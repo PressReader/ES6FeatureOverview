@@ -1,18 +1,24 @@
-Features covered in this overview:
-- # [Arrow functions](arrows/arrow_func.md)
-- # [`let` and `const`](let_const/let_and_const.md)
-- # [default + rest + spread](default_rest_spread/def_val.md)
-- # [destructuring](destruct/pattern_match.md)
-- # [[TODO]enhanced object literals](obj_literals/short_prop.md)
-- # [[TODO]modules](#modules)
-- # [classes](classes/classes.md)
-- # [[TODO]new built-in objects](#new-built-in-objects)
-- # [[TODO]iterators + for..of](#iterators--forof)
-- # [[TODO]generators](#generators)
-- # [[TODO]template strings](#template-strings)
+### [Arrow functions](arrows/arrow_func.md)
 
+### [`let` and `const`](let_const/let_and_const.md)
 
-### Enhanced Object Literals
+### [Default + Rest + Spread](default_rest_spread/def_val.md)
+
+### [Destructuring](destruct/pattern_match.md)
+
+### [Enhanced Object Literals](obj_literals/short_prop.md)
+
+### [[TODO]modules](#modules)
+
+### [classes](classes/classes.md)
+
+### [[TODO]new built-in objects](#new-built-in-objects)
+
+### [[TODO]iterators + for..of](#iterators--forof)
+
+### [[TODO]generators](#generators)
+
+### [[TODO]template strings](#template-strings)
 
 ### Iterators + For..Of
 
