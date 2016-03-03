@@ -3,16 +3,18 @@
 #### Map
 
 ```JavaScript
-var m = new Map();
+let m = new Map();
 m.set("hello", 42);
+
+let s = {};
 m.set(s, 34);
-m.get(s) == 34;
+m.get(s) === 34;
 ```
 
 #### Set
 
 ```JavaScript
-var s = new Set();
+let s = new Set();
 s.add("hello").add("goodbye").add("hello");
 s.size === 2;
 s.has("hello") === true;
