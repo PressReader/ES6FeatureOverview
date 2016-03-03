@@ -8,7 +8,7 @@
 
 ### [Enhanced Object Literals](obj_literals/short_prop.md)
 
-### [[TODO]modules](#modules)
+### [modules](modules/modules.md)
 
 ### [classes](classes/classes.md)
 
@@ -63,9 +63,6 @@ for (let i of iterable) {
 Also about Symbols here
 
 ### Generators
-
-### Modules
-Aslo about module loaders here
 
 ### New built-in objects
 Map, Set, WeakMap, WeakSet, Promise, Proxy
