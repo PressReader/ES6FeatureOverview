@@ -1,5 +1,5 @@
 Features covered in this overview:
-- [arrow functions](#arrow-functions)
+- [arrow functions](arrows/arrow_func.md)
 - [let and const](#let-and-const)
 - [destructuring](#destructuring)
 - [default + rest + spread](#default--rest--spread)
