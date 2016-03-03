@@ -8,11 +8,11 @@
 
 ### [Enhanced Object Literals](obj_literals/short_prop.md)
 
-### [modules](modules/modules.md)
+### [Modules](modules/modules.md)
 
-### [classes](classes/classes.md)
+### [Classes](classes/classes.md)
 
-### [[TODO]new built-in objects](#new-built-in-objects)
+### [New built-in objects](built-ins/proimise.md)
 
 ### [[TODO]iterators + for..of](#iterators--forof)
 
@@ -63,9 +63,6 @@ for (let i of iterable) {
 Also about Symbols here
 
 ### Generators
-
-### New built-in objects
-Map, Set, WeakMap, WeakSet, Promise, Proxy
 
 ### Template strings
 
