@@ -1,6 +1,6 @@
 ### Syntactical sugar over JavaScript's existing prototype-based inheritance.
 
-> Does not introduce a new object-oriented inheritance model.
+> Does not introduce a new object-oriented inheritance model
 
 ```JavaScript
 class Person {
@@ -23,7 +23,8 @@ class Person {
 }
 ```
 
-> Class declarations and class expressions are executed in `strict mode`.
-> Unlike function declarations, class declaration are not hoisted.
+> Class declarations and class expressions are executed in `strict mode`
+
+> Unlike function declarations, class declaration are not hoisted
 
 ##### [`-> sub classing`](subclass.md)
