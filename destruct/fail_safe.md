@@ -8,4 +8,4 @@ console.log(foo === undefined);   // true
 let [bar = 1] = [];
 console.log(bar === 1);   // true
 ```
-##### [`-> even more flexibility`](../multi_val.md)
+##### [`-> even more flexibility`](multi_val.md)
