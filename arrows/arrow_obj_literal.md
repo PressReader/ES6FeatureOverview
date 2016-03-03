@@ -11,4 +11,4 @@ Remember to wrap the object literal in parentheses:
 ```JavaScript
 var f = () => ({  foo: 1  });
 ```
-##### [`<<`](../readme.md)
+##### [`<<`](../README.md)
