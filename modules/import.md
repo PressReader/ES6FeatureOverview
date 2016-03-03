@@ -1,4 +1,4 @@
-### Import only needed parts, not he whole module
+### Import only needed parts, not the whole module
 
 ```JavaScript
 import {foo, bar} from "my-module";
