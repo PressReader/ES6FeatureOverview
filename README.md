@@ -18,4 +18,4 @@
 
 ### [iterators + for..of + generators](iterators/iterators.md)
 
-### [Template Strings](str-template/str.md)
+### [Template Strings](str_template/str.md)
