@@ -13,17 +13,16 @@ Features covered in this overview:
 
 
 ### Arrow functions
-Function shorthand using `=>` syntax.
-Syntactically similar to the related feature in C# of Java.
+> Function shorthand using `=>` syntax
 
-Function body can be an expression:
+> Syntactically similar to the related feature in C# of Java
+
 ```JavaScript
+//Function body can be an expression
 var inc = arr.map(v => v + 1);
 var inc = arr.map((value, index) => v + i);	// equivalent to: (value, index) => { return v + i; }
-```
 
-Or statement:
-```JavaScript
+//Or statement:
 var filterEven = (filtered, val) => {
 	if(val % 2 === 0) {
 		filtered.push(val);
@@ -31,7 +30,10 @@ var filterEven = (filtered, val) => {
 };
 ```
 
-`this` is always taken from lexical scope.
+> `this` is always taken from lexical scope
+
+Say goodbye to `.bind(this)`
+
 ```JavaScript
 var preson = {
 	_name: 'Bob Ross',
@@ -45,13 +47,15 @@ var preson = {
 };
 ```
 
-Since an arrow function is always bound to the context, "use strict" instruction is just ignored
+Arrow function is always bound to a context, `'use strict'` is just ignored.
+
 ```JavaScript
 var f = () => {'use strict'; return this; };
 f() === window; // or another global object
 ```
 
-`call` or `apply`, has no effect, only arguments can be passed.
+`call` or `apply`, has no effect, only arguments can be passed
+
 ```JavaScript
 var f = (a,b) => {
 	console.log('context', this);
@@ -62,34 +66,44 @@ var f = (a,b) => {
 f.call({name: 'Bob'}, 1, 2);
 ```
 
-Use concise syntax when return object literal
-The code inside braces ({}) is parsed as a sequence of statements
-(i.e. foo is treated like a label, not a key in an object literal).
+> Use concise syntax when returning object literal
+
 ```JavaScript
 var f = () => {  foo: 1  };               // Calling func() returns undefined!
 var f = () => {  foo: function() {}  };   // SyntaxError: function statement requires a name
-
-//Remember to wrap the object literal in parentheses:
+```
+The code inside braces ({}) is parsed as a sequence of statements
+(i.e. `foo` is treated like a label, not a key in an object literal).
+Remember to wrap the object literal in parentheses:
+```JavaScript
 var f = () => ({  foo: 1  });
 ```
 
+
 ### `let` and `const`
-`let` declares a block scope local variable
+
+> `let` declares a block scope local variable
+
 ```JavaScript
 let f = (value) => {
+	let factor = 2;
 	let delta = 1;
+
 	if(value > 2) {
-		let factor = 2;
-		return value * factor + delta;
+		let delta = 4 // different variable!
+		factor += delta;
 	} else {
 		let factor = 5;	// different variable!
-		return value * factor;
+		delta += factor;
 	}
+
+	return result * factor + delta;
 };
 ```
-`let` will hoist the variable to the top of the block,
+
+`let` will hoist the variable to the top of the block.
 However, referencing the variable in the block before the variable declaration results in a `ReferenceError`.
-Called Temporal Dead Zone (TDZ);
+This is *called temporal dead zone* (TDZ);
 ```JavaScript
 function do_something() {
   console.log(foo); // ReferenceError
@@ -97,7 +111,8 @@ function do_something() {
 }
 ```
 
-`let` can be used to declare variables in the scope of the loops
+> `let` can be used to declare variables in the scope of the loops
+
 ```JavaScript
 var i = 0;
 for (let i = i; i < 10; i++) {
@@ -105,21 +120,26 @@ for (let i = i; i < 10; i++) {
 }
 ```
 
-`const` is single-assignment. It does not mean the value it holds is immutable,
-just that the variable identifier cannot be reassigned.
-An initializer for a constant is required.
+> `const` is single-assignment.
+
 ```JavaScript
 const x = 1;
 x = 2;
 console.log(x); // prints 1
+```
 
+> `let` does not make the value it holds immutable, just that the variable identifier cannot be reassigned.
+
+```JavaScript
 const y = {
-	count: 1,
+  count: 1,
 };
-y.count++;
 
+y.count++;
 console.log(y.count);	// prints 2
 ```
+An initializer for a constant is required.
+
 
 ### Destructuring
 
