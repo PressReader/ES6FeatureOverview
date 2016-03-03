@@ -24,5 +24,6 @@ class Person {
 ```
 
 > Class declarations and class expressions are executed in `strict mode`.
+> Unlike function declarations, class declaration are not hoisted.
 
 ##### [`-> sub classing`](subclass.md)

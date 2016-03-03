@@ -4,11 +4,11 @@ Features covered in this overview:
 - # [[TODO] destructuring](#destructuring)
 - # [[TODO]default + rest + spread](#default--rest--spread)
 - # [[TODO]enhanced object literals](#enhanced-object-literals)
+- # [[TODO]modules](#modules)
+- # [classes](classes/classes.md)
+- # [[TODO]new built-in objects](#new-built-in-objects)
 - # [[TODO]iterators + for..of](#iterators--forof)
 - # [[TODO]generators](#generators)
-- # [[TODO:subclassable built-ins]classes](classes/classes.md)
-- # [[TODO]modules](#modules)
-- # [[TODO]new built-in objects](#new-built-in-objects)
 - # [[TODO]template strings](#template-strings)
 
 ### Destructuring
@@ -59,12 +59,7 @@ for (let i of iterable) {
 ```
 Also about Symbols here
 
-
-
 ### Generators
-
-### Classes
-
 
 ### Modules
 Aslo about module loaders here
