@@ -135,6 +135,58 @@ Also about Symbols here
 ### Classes
 Also about subclassable Built-ins here
 
+```JavaScript
+class Person {
+  constructor (name) {
+    this.name = name;
+  }
+  
+  get name() {
+    return this._name;
+  }
+  
+  set name(value) {
+    this._name = value;
+  }
+  
+  doWork() {
+    console.log(this.name + " is working");
+  }
+}
+
+
+class Employee extends Person {
+  constructor (name, title) {
+    super(name);
+    
+    this._title = title;
+  }
+  
+  get title() {
+    return this._title;
+  }
+  
+  doWork() {
+    super.doWork();
+    console.log("Hard working as " + this._title)
+  }
+}
+
+var people = [
+  new Person("Alex"),
+  new Employee("Oleg", "Developer"),
+  {}
+];
+
+
+for (var i = 0; i < people.length; i++ ) {
+   if (people[i] instanceof Person) {
+      console.log(people[i].doWork());
+   }
+}
+```
+
+
 ### Modules
 Aslo about module loaders here
 
