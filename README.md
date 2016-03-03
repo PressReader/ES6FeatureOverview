@@ -1,7 +1,7 @@
 Features covered in this overview:
 - # [Arrow functions](arrows/arrow_func.md)
 - # [`let` and `const`](let_const/let_and_const.md)
-- # [[TODO]default + rest + spread](#default--rest--spread)
+- # [default + rest + spread](default_rest_spread/def_val.md)
 - # [destructuring](destruct/pattern_match.md)
 - # [[TODO]enhanced object literals](#enhanced-object-literals)
 - # [[TODO]modules](#modules)
@@ -11,7 +11,6 @@ Features covered in this overview:
 - # [[TODO]generators](#generators)
 - # [[TODO]template strings](#template-strings)
 
-### Default + Rest + Spread
 
 ### Enhanced Object Literals
 
