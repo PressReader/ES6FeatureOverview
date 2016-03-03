@@ -17,4 +17,4 @@ console.log(q); // true
 let {p: foo, q: bar} = o; // foo === 42, bar === true
 ```
 
-##### [`-> fail safe`](../fail_safe.md)
+##### [`-> fail safe`](fail_safe.md)
