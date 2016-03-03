@@ -16,7 +16,7 @@ arr1.push(...arr2);
 ##### In array literals
 ```JavaScript
 let [a, b, ...iterable] = [1, 2, 3, 4, 5];
-console.log(iterable.join());   // 3, 4, 5
+console.log(iterable);   // [3, 4, 5]
 ```
 > Even more poweful!
 
