@@ -12,7 +12,7 @@
 
 ### [Classes](classes/classes.md)
 
-### [New built-in objects](built_ins/proimise.md)
+### [New built-in objects](built_ins/promise.md)
 
 ### [[TODO]iterators + for..of](#iterators--forof)
 
