@@ -1,4 +1,4 @@
-### Is used for deferred and asynchronous operations
+### `Promise` is used for deferred and asynchronous operations
 
 ```JavaScript
 new Promise(function(resolve, reject) {
