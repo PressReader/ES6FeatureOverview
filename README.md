@@ -133,58 +133,81 @@ Also about Symbols here
 ### Generators
 
 ### Classes
-Also about subclassable Built-ins here
+> Syntactical sugar over JavaScript's existing prototype-based inheritance.
+
+> Does not introduce a new object-oriented inheritance model.
 
 ```JavaScript
 class Person {
   constructor (name) {
-    this.name = name;
+    this._name = name;
   }
-  
+
+  // property definiton shorthand
   get name() {
     return this._name;
   }
-  
   set name(value) {
     this._name = value;
   }
-  
+
+  // note that this is a prototype method
   doWork() {
-    console.log(this.name + " is working");
+    return this.name + ' is working';
   }
 }
+```
 
-
+> Sub classing with `extends`
+```JavaScript
 class Employee extends Person {
   constructor (name, title) {
     super(name);
-    
+
     this._title = title;
   }
-  
+
   get title() {
     return this._title;
   }
-  
+
   doWork() {
-    super.doWork();
-    console.log("Hard working as " + this._title)
+    return super.doWork() + ' hard';
   }
 }
 
-var people = [
-  new Person("Alex"),
-  new Employee("Oleg", "Developer"),
-  {}
-];
+let greatPerson = new Person("Bob Ross");
+let humblePerson = new Employee("Oleg", "developer");
 
-
-for (var i = 0; i < people.length; i++ ) {
-   if (people[i] instanceof Person) {
-      console.log(people[i].doWork());
-   }
+for(let person of [greatPerson, humblePerson]) {
+  console.log(person.doWork());
 }
 ```
+
+> Can also have static methods
+```JavaScript
+class Point {
+    constructor(x, y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    static distance(a, b) {
+        let dx = a.x - b.x;
+        let dy = a.y - b.y;
+
+        return Math.sqrt(dx*dx + dy*dy);
+    }
+}
+let p1 = new Point(5, 5);
+let p2 = new Point(10, 10);
+
+// p1.distance is not defined.
+
+console.log(Point.distance(p1, p2));
+```
+##Also about subclassable Built-ins here
+
 
 
 ### Modules
