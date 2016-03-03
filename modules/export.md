@@ -17,5 +17,7 @@ export default function (x) {
 }
 // or export default class {}
 ```
+
 >  only one per script
+
 ##### [`-> import`](import.md)
